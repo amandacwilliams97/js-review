@@ -26,5 +26,16 @@ function fizzBuzz() {
     }
 }
 
+function countB(text) {
+    var count = 0;
+    for(var i=0; i<text.length; i++) {
+        if(text[i]== 'B') {
+            count++;
+        }
+    }
+    return count;
+}
+
 printIntro();
 fizzBuzz();
+console.log(countB("Bean Counting")); //1
