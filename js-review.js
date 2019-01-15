@@ -36,6 +36,17 @@ function countB(text) {
     return count;
 }
 
+function countChar(text, character) {
+    var count = 0;
+    for(var i=0; i<text.length; i++) {
+        if(text[i]== character) {
+            count++;
+        }
+    }
+    return count;
+}
+
 printIntro();
 fizzBuzz();
 console.log(countB("Bean Counting")); //1
+console.log(countChar("Bean Counting", "B"));//1
